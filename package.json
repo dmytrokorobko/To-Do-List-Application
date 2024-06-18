@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://dmytrokorobko.github.io/To-Do-List-Application/",
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -21,7 +22,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "deploy-all": "git add . && git commit -m \"Completed some new tasks\" && git push origin main && npm run deploy"
+    "deploy-all": "git push origin main && npm run deploy"
   },
   "eslintConfig": {
     "extends": [

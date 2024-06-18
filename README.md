@@ -4,6 +4,8 @@ These are a series of self-test exercises (5 tasks) designed by ChatGPT to build
 
 # Task 1: Build a To-Do List Application
 
+[Live Version](https://dmytrokorobko.github.io/To-Do-List-Application/)
+
 ## Features
 
 1. **Components and Props**: 
