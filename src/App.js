@@ -9,8 +9,8 @@ import { Page404 } from './pages/Page404';
 
 function App() {
   const myRouter = createBrowserRouter(createRoutesFromElements(
-    <Route path="/To-Do-List-Application" element={<Root />}>
-      <Route path='/' element={<AllTasks />} />
+    <Route path="/" element={<Root />}>
+      <Route index element={<AllTasks />} />
       <Route path='/completed' element={<CompletedTasks />} />
       <Route path='/pending' element={<PendingTasks />} />
       <Route path='/new' element={<NewTask />} />
@@ -18,7 +18,9 @@ function App() {
       <Route path='/404' element={<Page404 />} />
       <Route path='*' element={<Page404 />} />
     </Route>
-  ))
+  ), {
+    basename: '/To-Do-List-Application',
+  })
   return (    
     <RouterProvider router={myRouter} />
   );
