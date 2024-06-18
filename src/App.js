@@ -9,7 +9,7 @@ import { Page404 } from './pages/Page404';
 
 function App() {
   const myRouter = createBrowserRouter(createRoutesFromElements(
-    <Route path="/" element={<Root />}>
+    <Route path="/To-Do-List-Application" element={<Root />}>
       <Route path='/' element={<AllTasks />} />
       <Route path='/completed' element={<CompletedTasks />} />
       <Route path='/pending' element={<PendingTasks />} />
