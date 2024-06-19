@@ -120,7 +120,7 @@ section .todo-item:hover {
 }
 
 section .todo-item .todo-title {
-  
+  font-weight: 500;
 }
 
 section .todo-item .manage {

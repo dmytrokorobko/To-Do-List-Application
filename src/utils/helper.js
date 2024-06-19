@@ -1,4 +1,6 @@
-export function generateUniqueId() {
+export function generateUniqueId(preparedId) {
+   if (preparedId !== undefined && preparedId !== '') return preparedId
+
    const now = new Date();
    const year = now.getFullYear();
    const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are zero-based

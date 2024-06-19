@@ -1,10 +1,18 @@
-export function Item({task}) {
-   function handleCheckboxChange(e) {
+import { useTasks } from "../contexts/TasksContext";
 
+export function Item({task}) {
+   const {tasks, setTasks} = useTasks();
+
+   function handleCheckboxChange(e) {
+      setTasks(tasks.map(t => {
+         if (t.id === task.id) t.isCompleted = !t.isCompleted;
+         return t;
+      }))
    }
 
    function handleDeleteClick(e) {
       e.preventDefault();
+      setTasks(tasks.filter(t => t.id !== task.id));
    }
    return (
       <div className="todo-item">
