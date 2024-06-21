@@ -1,8 +1,4 @@
-These are a series of self-test exercises (5 tasks) designed by ChatGPT to build my confidence, knowledge and skills. They cover topics such as components and props, hooks, promises and async/await, React Router, and Jest/RTL testing. These exercises are based on content from the Front-End Web Engineering course on Codecademy.
-
----
-
-# Task 1: Build a To-Do List Application
+# Task: Build a To-Do List Application
 
 [Live Version](https://dmytrokorobko.github.io/To-Do-List-Application/)
 
