@@ -20,7 +20,8 @@ function App() {
     </Route>
   ), {
     basename: '/To-Do-List-Application',
-  })
+  });
+  
   return (    
     <RouterProvider router={myRouter} />
   );

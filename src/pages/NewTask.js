@@ -5,22 +5,20 @@ import { useNavigate } from "react-router-dom";
 
 export function NewTask() {
    const title = useRef('');
-   const {setTasks} = useTasks();
+   const { addTask } = useTasks();
    const navigate = useNavigate();
 
    function handleSubmit(e) {      
       e.preventDefault();
-      console.log("Submit pressed");
+      console.log("4. Submit pressed");
       if (title.current && title.current.value.length !== '') {
          const newTask = {
             id: generateUniqueId(),
             title: title.current.value,
             isCompleted: false
          };
-         setTasks(prev => [
-            newTask,
-            ...prev
-         ]);
+         console.log("5. New task created:", newTask);
+         addTask(newTask);
          navigate('/');
       } else alert("Something wrong with title. Check again and repeat.");
    }
